@@ -507,7 +507,7 @@ NativeWindowMac::NativeWindowMac(
   }
 
   if (windowType == "desktop") {
-    [window_ setLevel:kCGDesktopWindowLevel - 1];
+    [window_ setLevel:kCGDesktopWindowLevel + 1];
     [window_ setDisableKeyOrMainWindow:YES];
     [window_ setCollectionBehavior:
         (NSWindowCollectionBehaviorCanJoinAllSpaces |
